@@ -1,40 +1,40 @@
-2022-08-31 14:13:44.128  INFO 12756 --- [main] com.ventas.ventas.VentasApplication      : Starting VentasApplication using Java 11.0.16 on AlejaReyes0627 with PID 12756 (C:\Users\aleja\OneDrive\Escritorio\ventas\target\classes started by aleja in C:\Users\aleja\OneDrive\Escritorio\ventas)
-2022-08-31 14:13:44.132  INFO 12756 --- [main] com.ventas.ventas.VentasApplication      : No active profile set, falling back to 1 default profile: "default"
-2022-08-31 14:13:44.133 DEBUG 12756 --- [main] o.s.boot.SpringApplication               : Loading source class com.ventas.ventas.VentasApplication
-2022-08-31 14:13:44.201 DEBUG 12756 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4ba302e0
-2022-08-31 14:13:45.218  INFO 12756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-08-31 14:13:45.234 DEBUG 12756 --- [main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.ventas.ventas'. Automatic @Repository and @Entity scanning is enabled.
-2022-08-31 14:13:45.409  INFO 12756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 179 ms. Found 1 JPA repository interfaces.
-2022-08-31 14:13:45.943 DEBUG 12756 --- [main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: C:\Users\aleja\.m2\repository\org\springframework\boot\spring-boot\2.7.2\spring-boot-2.7.2.jar
-2022-08-31 14:13:45.946 DEBUG 12756 --- [main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: C:\Users\aleja\.m2\repository\org\springframework\boot\spring-boot\2.7.2\spring-boot-2.7.2.jar
-2022-08-31 14:13:45.948 DEBUG 12756 --- [main] .s.b.w.e.t.TomcatServletWebServerFactory : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
-2022-08-31 14:13:45.973  INFO 12756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
-2022-08-31 14:13:45.985  INFO 12756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-08-31 14:13:45.988  INFO 12756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-2022-08-31 14:13:46.208  INFO 12756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-08-31 14:13:46.209 DEBUG 12756 --- [main] w.s.c.ServletWebServerApplicationContext : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2022-08-31 14:13:46.209  INFO 12756 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2008 ms
-2022-08-31 14:13:46.244 DEBUG 12756 --- [main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
-2022-08-31 14:13:46.244 DEBUG 12756 --- [main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
-2022-08-31 14:13:46.285 DEBUG 12756 --- [main] o.s.b.w.s.f.OrderedRequestContextFilter  : Filter 'requestContextFilter' configured for use
-2022-08-31 14:13:46.285 DEBUG 12756 --- [main] s.b.w.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
-2022-08-31 14:13:46.285 DEBUG 12756 --- [main] o.s.b.w.s.f.OrderedFormContentFilter     : Filter 'formContentFilter' configured for use
-2022-08-31 14:13:46.442  INFO 12756 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-08-31 14:13:46.517  INFO 12756 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
-2022-08-31 14:13:46.735  INFO 12756 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-08-31 14:13:46.868  INFO 12756 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-08-31 14:13:47.290  INFO 12756 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-08-31 14:13:47.306  INFO 12756 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2022-08-31 14:13:48.355  INFO 12756 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-08-31 14:13:48.368  INFO 12756 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-08-31 14:13:50.018  WARN 12756 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-08-31 14:13:50.432 DEBUG 12756 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-08-31 14:13:50.591 DEBUG 12756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
-2022-08-31 14:13:51.235 DEBUG 12756 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/**] in 'resourceHandlerMapping'
-2022-08-31 14:13:51.249 DEBUG 12756 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
-2022-08-31 14:13:51.465 DEBUG 12756 --- [main] inMXBeanRegistrar$SpringApplicationAdmin : Application Admin MBean registered with name 'org.springframework.boot:type=Admin,name=SpringApplication'
-2022-08-31 14:13:51.607  INFO 12756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
-2022-08-31 14:13:51.632 DEBUG 12756 --- [main] ConditionEvaluationReportLoggingListener : 
+2022-09-02 10:49:51.711  INFO 5972 --- [main] com.ventas.ventas.VentasApplication      : Starting VentasApplication using Java 11.0.16 on AlejaReyes0627 with PID 5972 (C:\Users\aleja\OneDrive\Escritorio\ventas\target\classes started by aleja in C:\Users\aleja\OneDrive\Escritorio\ventas)
+2022-09-02 10:49:51.738  INFO 5972 --- [main] com.ventas.ventas.VentasApplication      : No active profile set, falling back to 1 default profile: "default"
+2022-09-02 10:49:51.741 DEBUG 5972 --- [main] o.s.boot.SpringApplication               : Loading source class com.ventas.ventas.VentasApplication
+2022-09-02 10:49:51.844 DEBUG 5972 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4ba302e0
+2022-09-02 10:49:53.353  INFO 5972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-02 10:49:53.380 DEBUG 5972 --- [main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.ventas.ventas'. Automatic @Repository and @Entity scanning is enabled.
+2022-09-02 10:49:53.684  INFO 5972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 311 ms. Found 1 JPA repository interfaces.
+2022-09-02 10:49:55.120 DEBUG 5972 --- [main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: C:\Users\aleja\.m2\repository\org\springframework\boot\spring-boot\2.7.2\spring-boot-2.7.2.jar
+2022-09-02 10:49:55.127 DEBUG 5972 --- [main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: C:\Users\aleja\.m2\repository\org\springframework\boot\spring-boot\2.7.2\spring-boot-2.7.2.jar
+2022-09-02 10:49:55.142 DEBUG 5972 --- [main] .s.b.w.e.t.TomcatServletWebServerFactory : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2022-09-02 10:49:55.371  INFO 5972 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-09-02 10:49:55.501  INFO 5972 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-02 10:49:55.502  INFO 5972 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-02 10:49:56.892  INFO 5972 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-02 10:49:56.913 DEBUG 5972 --- [main] w.s.c.ServletWebServerApplicationContext : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-09-02 10:49:56.926  INFO 5972 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5082 ms
+2022-09-02 10:49:57.030 DEBUG 5972 --- [main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-09-02 10:49:57.037 DEBUG 5972 --- [main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2022-09-02 10:49:57.316 DEBUG 5972 --- [main] o.s.b.w.s.f.OrderedRequestContextFilter  : Filter 'requestContextFilter' configured for use
+2022-09-02 10:49:57.328 DEBUG 5972 --- [main] s.b.w.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
+2022-09-02 10:49:57.329 DEBUG 5972 --- [main] o.s.b.w.s.f.OrderedFormContentFilter     : Filter 'formContentFilter' configured for use
+2022-09-02 10:49:57.833  INFO 5972 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-02 10:49:58.007  INFO 5972 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-02 10:49:58.462  INFO 5972 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-02 10:49:58.719  INFO 5972 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-02 10:49:59.193  INFO 5972 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-02 10:49:59.241  INFO 5972 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-09-02 10:50:01.292  INFO 5972 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-02 10:50:01.311  INFO 5972 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-02 10:50:02.543  WARN 5972 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-02 10:50:02.934 DEBUG 5972 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-09-02 10:50:03.194 DEBUG 5972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2022-09-02 10:50:04.151 DEBUG 5972 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/**] in 'resourceHandlerMapping'
+2022-09-02 10:50:04.172 DEBUG 5972 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-09-02 10:50:04.363 DEBUG 5972 --- [main] inMXBeanRegistrar$SpringApplicationAdmin : Application Admin MBean registered with name 'org.springframework.boot:type=Admin,name=SpringApplication'
+2022-09-02 10:50:04.550  INFO 5972 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-09-02 10:50:04.592 DEBUG 5972 --- [main] ConditionEvaluationReportLoggingListener : 
 
 
 ============================
@@ -1235,53 +1235,7 @@ Unconditional classes:
 
 
 
-2022-08-31 14:13:51.640 DEBUG 12756 --- [main] ySourcesPropertyResolver$DefaultResolver : Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
-2022-08-31 14:13:51.649  INFO 12756 --- [main] com.ventas.ventas.VentasApplication      : Started VentasApplication in 8.148 seconds (JVM running for 10.611)
-2022-08-31 14:13:51.650 DEBUG 12756 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
-2022-08-31 14:13:51.654 DEBUG 12756 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
-2022-08-31 14:14:39.083  INFO 12756 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-31 14:14:39.088  INFO 12756 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-08-31 14:14:39.088 DEBUG 12756 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2022-08-31 14:14:39.091 DEBUG 12756 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2022-08-31 14:14:39.091 DEBUG 12756 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2022-08-31 14:14:39.092 DEBUG 12756 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@247dcbba
-2022-08-31 14:14:39.093 DEBUG 12756 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3a4cb483
-2022-08-31 14:14:39.096 DEBUG 12756 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2022-08-31 14:14:39.096  INFO 12756 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2022-08-31 14:14:39.107 DEBUG 12756 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui.html", parameters={}
-2022-08-31 14:14:39.112 DEBUG 12756 --- [http-nio-9090-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerWelcomeWebMvc#redirectToUi(HttpServletRequest)
-2022-08-31 14:14:39.188 DEBUG 12756 --- [http-nio-9090-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-2022-08-31 14:14:39.188 DEBUG 12756 --- [http-nio-9090-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
-2022-08-31 14:14:39.190 DEBUG 12756 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
-2022-08-31 14:14:39.197 DEBUG 12756 --- [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
-2022-08-31 14:14:39.205 DEBUG 12756 --- [http-nio-9090-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
-2022-08-31 14:14:39.215 DEBUG 12756 --- [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-08-31 14:14:40.247 DEBUG 12756 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui.css", parameters={}
-2022-08-31 14:14:40.250 DEBUG 12756 --- [http-nio-9090-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
-2022-08-31 14:14:40.267 DEBUG 12756 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-08-31 14:14:40.273 DEBUG 12756 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
-2022-08-31 14:14:40.272 DEBUG 12756 --- [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.css", parameters={}
-2022-08-31 14:14:40.274 DEBUG 12756 --- [http-nio-9090-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
-2022-08-31 14:14:40.274 DEBUG 12756 --- [http-nio-9090-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
-2022-08-31 14:14:40.276 DEBUG 12756 --- [http-nio-9090-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
-2022-08-31 14:14:40.276 DEBUG 12756 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
-2022-08-31 14:14:40.280 DEBUG 12756 --- [http-nio-9090-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
-2022-08-31 14:14:40.280 DEBUG 12756 --- [http-nio-9090-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
-2022-08-31 14:14:40.284 DEBUG 12756 --- [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-08-31 14:14:40.301 DEBUG 12756 --- [http-nio-9090-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-08-31 14:14:40.313 DEBUG 12756 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-08-31 14:14:40.339 DEBUG 12756 --- [http-nio-9090-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-08-31 14:14:40.713 DEBUG 12756 --- [http-nio-9090-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
-2022-08-31 14:14:40.714 DEBUG 12756 --- [http-nio-9090-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
-2022-08-31 14:14:40.715 DEBUG 12756 --- [http-nio-9090-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
-2022-08-31 14:14:40.716 DEBUG 12756 --- [http-nio-9090-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:9090/swagger-ui/oauth2-re (truncated)...]
-2022-08-31 14:14:40.735 DEBUG 12756 --- [http-nio-9090-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-08-31 14:14:40.765 DEBUG 12756 --- [http-nio-9090-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
-2022-08-31 14:14:40.765 DEBUG 12756 --- [http-nio-9090-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
-2022-08-31 14:14:40.883 DEBUG 12756 --- [http-nio-9090-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/favicon-32x32.png", parameters={}
-2022-08-31 14:14:40.884 DEBUG 12756 --- [http-nio-9090-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
-2022-08-31 14:14:40.889 DEBUG 12756 --- [http-nio-9090-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2022-08-31 14:14:41.278  INFO 12756 --- [http-nio-9090-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 497 ms
-2022-08-31 14:14:41.306 DEBUG 12756 --- [http-nio-9090-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
-2022-08-31 14:14:41.306 DEBUG 12756 --- [http-nio-9090-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{"openapi":"3.0.1","info":{"title":"OpenAPI definition","version":"v0"},"servers":[{"url":"http://lo (truncated)..."]
-2022-08-31 14:14:41.306 DEBUG 12756 --- [http-nio-9090-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-09-02 10:50:04.611 DEBUG 5972 --- [main] ySourcesPropertyResolver$DefaultResolver : Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+2022-09-02 10:50:04.627  INFO 5972 --- [main] com.ventas.ventas.VentasApplication      : Started VentasApplication in 13.859 seconds (JVM running for 16.645)
+2022-09-02 10:50:04.635 DEBUG 5972 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2022-09-02 10:50:04.641 DEBUG 5972 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
