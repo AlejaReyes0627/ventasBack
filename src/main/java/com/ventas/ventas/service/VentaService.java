@@ -1,39 +1,48 @@
 package com.ventas.ventas.service;
 
+import com.ventas.ventas.model.Producto;
 import com.ventas.ventas.model.Venta;
+import com.ventas.ventas.repository.IProductoRepository;
 import com.ventas.ventas.repository.IVentaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class VentaService implements ICrudService<Venta>{
 
     @Autowired
-    private IVentaRepository ventaRepository;
+    private IVentaRepository ventaRepo;
+
+    @Autowired
+    private IProductoRepository productoRepo;
 
     @Override
-    public List<Venta> findAll() {
-        return ventaRepository.findAll();
+    public List<Venta> findAll() {return ventaRepo.findAll();}
+
+    @Override
+    public Optional<Venta> findById(Integer id) {return ventaRepo.findById(id);}
+
+    @Override
+    public Venta create(Venta venta) {
+
+        venta.getDetalleVenta().forEach(detalleVenta -> {
+            Optional<Producto> producto = productoRepo.findById(detalleVenta.getProducto().getIdProducto());
+            if (producto.isPresent()){
+                Double precioUnitario = producto.get().getPrecio();
+                Double precioTotal = precioUnitario * detalleVenta.getCantidad().doubleValue();
+                detalleVenta.setPrecio(precioUnitario);
+                detalleVenta.getPrecioTotal(precioTotal);
+                detalleVenta.setVenta(venta);
+            }
+        });
+        return ventaRepo.save(venta);
     }
 
     @Override
-    public Optional<Venta> findById(Integer id) {
-        return ventaRepository.findById(id);
-    }
+    public Venta update(Venta venta) {return ventaRepo.save(venta);}
 
     @Override
-    public Venta create(Venta model) {
-        return ventaRepository.save(model);
-    }
-
-    @Override
-    public Venta update(Venta model) {
-        return ventaRepository.save(model);
-    }
-
-    @Override
-    public void delete(Integer id) {
-        ventaRepository.deleteById(id);
-    }
+    public void delete(Integer id) {ventaRepo.deleteById(id);}
 }
